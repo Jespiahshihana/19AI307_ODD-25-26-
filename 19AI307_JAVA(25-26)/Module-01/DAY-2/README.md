@@ -1,4 +1,4 @@
-<img width="521" height="311" alt="image" src="https://github.com/user-attachments/assets/dec4f56a-867a-4fad-b478-50129e380d60" /># Ex.No:1(B) CONDITIONAL STATEMENT
+# Ex.No:1(B) CONDITIONAL STATEMENT
 
 ## QUESTION:
 In a magical building, an elevator behaves oddly:
@@ -85,4 +85,4 @@ public class prog
 The program was executed successfully and the output was displayed based on the given conditions.
 
 
-## RESULT:
+
