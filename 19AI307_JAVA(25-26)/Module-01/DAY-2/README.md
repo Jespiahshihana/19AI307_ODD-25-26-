@@ -81,6 +81,8 @@ public class prog
 
 ## OUTPUT:
 <img width="521" height="311" alt="image" src="https://github.com/user-attachments/assets/680e4966-7a7c-4536-add0-e5329ae30ae0" />
+
+
 ## RESULT
 The program was executed successfully and the output was displayed based on the given conditions.
 
