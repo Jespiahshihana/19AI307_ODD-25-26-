@@ -1,15 +1,32 @@
 # Ex.No:1(D) ARRAYS
 
 ## QUESTION:
+Write a Java Program to Find the Average of Array Elements.
+
+For example:
+
+Input	Result
+5
+10
+20
+30
+40
+50
+The average of elements is 30.00
 
 
 ## AIM:
-
+To develop a Java program to calculate the average of elements in an array.
 
 ## ALGORITHM :
 1.	Start the program.
 2.	Import the necessary package 'java.util'
-3.	
+3.	Read the number of elements.
+4. Store elements in an array.
+5. Find the sum of all elements.
+6. Calculate average = sum / number of elements.
+7. Display the average.
+8. Stop the program.
 
 
 
@@ -19,14 +36,33 @@
  ```
 /*
 Program to implement a Array concept using Java
-Developed by: 
-RegisterNumber:  
+Developed by: JESPIAH SHIHANA P S
+RegisterNumber:  212223040077
 */
 ```
 
 ## SOURCE CODE:
 
-
+```
+import java.util.*;
+class prog
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int [] arr=new int[n];
+        int sum=0;
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+            sum+=arr[i];
+        }
+        double avg=(double)sum/n;
+        System.out.printf("The average of elements is %.2f",avg);
+    }
+}
+```
 
 
 
@@ -34,6 +70,8 @@ RegisterNumber:
 
 ## OUTPUT:
 
+<img width="825" height="497" alt="image" src="https://github.com/user-attachments/assets/2538112b-fcf4-4ce5-8b07-a431bcb10b5e" />
 
 
 ## RESULT:
+The program was executed successfully and the average of the array elements was displayed.
