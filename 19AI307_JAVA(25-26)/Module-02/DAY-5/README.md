@@ -1,15 +1,39 @@
 # Ex.No:2(E) ACCESS MODIFIERS
 
 ## QUESTION:
+Create a class Counter with a static integer variable count. Every time an object is created, increase count by 1. Print the total count using a static method
+
+
+class Counter {
+    static int count = 0;
+     // Your Code Here
+}
+
+class prog {
+    public static void main(String[] args) {
+        // Your Code Here
+    }
+}
+
+ 
+
+For example:
+
+Result
+Total objects created: 7
 
 
 ## AIM:
-
+To develop a Java program using a static variable and method to count the number of objects created.
 
 ## ALGORITHM :
 1.	Start the program.
 2.	Import the necessary package 'java.util'
-3.	
+3.	Declare a static variable count.
+4. Increment count in the constructor.
+5. Create multiple objects.
+6. Use a static method to display count.
+7. Stop the program.
 
 
 
@@ -19,13 +43,39 @@
  ```
 /*
 Program to implement a Access Modifiers using Java
-Developed by: 
-RegisterNumber:  
+Developed by: JESPIAH SHIHANA P S
+RegisterNumber:  212223040077
 */
 ```
 
 ## SOURCE CODE:
-
+```
+import java.util.*;
+class Counter
+{
+    static int count=0;
+    Counter()
+    {
+        count++;
+    }
+    static void display()
+    {
+        System.out.println("Total objects created: "+count);
+    }
+}
+class prog
+{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner (System.in);
+        for(int i=0;i<7;i++)
+        {
+            new Counter();
+        }
+        Counter.display();
+    }
+}
+```
 
 
 
@@ -33,7 +83,9 @@ RegisterNumber:
 
 
 ## OUTPUT:
+<img width="646" height="168" alt="image" src="https://github.com/user-attachments/assets/a3376bb0-a4f8-43cf-bb22-27b8b29ccd9f" />
 
 
 
 ## RESULT:
+The program was executed successfully and the total number of objects created was displayed.
