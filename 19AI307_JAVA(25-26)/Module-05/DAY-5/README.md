@@ -2,14 +2,35 @@
 
 ## QUESTION:
 
+Create a program that reads a thread name and a priority (1–10), sets that priority to a new thread, prints both values.
+
+ Input:
+
+Two lines: <threadName>, <priority>
+
+ Output:
+
+Thread <threadName> priority set to <priority>
+
+For example:
+
+Input	Result
+Alpha
+5
+Thread Alpha priority is 5
 
 ## AIM:
 
+Aim: To set and display the name and priority of a thread based on user input.
 
 ## ALGORITHM :
 1.	Start the program.
 2.	Import the necessary package 'java.util'
-3.	
+3.	Read thread name from the user.
+4. Read thread priority (1–10) from the user.
+5. Create a thread.
+6. Set the thread’s name and priority.
+7. Display the thread’s name and priority.
 
 
 
@@ -19,13 +40,39 @@
  ```
 /*
 Program to implement a Synchronization concept using Java
-Developed by: 
-RegisterNumber:  
+Developed by: JESPIAH SHIHANA P S
+RegisterNumber:  212223040077
 */
 ```
 
 ## SOURCE CODE:
+```
+import java.util.Scanner;
 
+class MyThread extends Thread {
+    public MyThread(String name) {
+        super(name); // set thread name
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String threadName = sc.nextLine();
+
+        int priority = sc.nextInt();
+
+        MyThread t = new MyThread(threadName);
+
+        t.setPriority(priority);
+
+        System.out.println("Thread " + t.getName() + " priority is " + t.getPriority());
+
+        sc.close();
+    }
+}
+```
 
 
 
@@ -33,7 +80,9 @@ RegisterNumber:
 
 
 ## OUTPUT:
+<img width="766" height="313" alt="image" src="https://github.com/user-attachments/assets/f1969b73-dfec-4ae8-84c9-a00860dac9d4" />
 
 
 
 ## RESULT:
+Thus the program successfully sets and displays the thread name and its priority.
